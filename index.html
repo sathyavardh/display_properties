@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+    <style>
+        
+        .container {
+            text-align: center;
+        }
+
+        .one {
+            display: inline;
+            height: 250px;
+            width: 250px; /*will not work*/
+            background-color: lightpink;
+            margin: 50px 10px;
+            
+        }
+
+        .two {
+            display: inline-block;
+            height: 350px;
+            width: 350px;
+            background-color: lightblue;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .three{
+            display: inline-block;
+            height: 350px;
+            width: 350px;
+            background-color: aqua;
+            margin: 50px auto;
+        }
+
+        .four {
+            display: block;
+            height: 350px;
+            width: 350px;
+            background-color: lightgreen;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body style="background-color: peachpuff;">
+    <div class="container">
+        <div class="one">Hii, Hello. This is inline here we cannot define any height or width. It will automatically adjust its
+            its height or width according to content.
+        </div>
+        <div class="two"> Hello. This is inline-block. Here we can define any height or width. And it does not start with new line.</div>
+        <div class="three">This is also an inline-block.</div>
+        <div class="four"> This is Block. Here we can define any height or width. And it obeys a new line</div>
+    </div>
+</body>
+</html>
